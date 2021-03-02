@@ -5,6 +5,18 @@ $accent: #c5ac2d;
 
 html {
     box-sizing: border-box;
+    .slick-dots {
+        list-style: none;
+        text-align: center;
+        button {
+            font-size: 0;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: none;
+            padding: 0;
+        }
+    }
 
     *,
     *::after *::before {
@@ -69,13 +81,14 @@ html {
         }
 
         .main {
+            padding-bottom: 100px;
             &__heading {
                 display: flex;
                 padding: 50px 0 30px;
                 .main__content {
                     text-align: center;
                     padding-top: 90px;
-                    // max-width: 50%;
+                    width: 50%;
                     .main__title {
                         font-size: 48px;
                         font-family: "Fira Sans", sans-serif;
@@ -83,24 +96,20 @@ html {
                         font-weight: 500;
                         margin: 0 auto 20px;
                         max-width: 600px;
-
                     }
                     .main__text {
                         font-size: 24px;
                         line-height: 28px;
                         margin: 0 auto 60px;
                         max-width: 500px;
-
-
                     }
                     .app-btn {
                         text-transform: uppercase;
                         color: $white;
                         background-color: $accent;
                         padding: 15px 20px;
-                        transition: all .5s;
+                        transition: all 0.5s;
                         border: 1px solid transparent;
-
 
                         &:hover {
                             color: $accent;
@@ -110,18 +119,80 @@ html {
                     }
                 }
                 .main__slider {
+                    width: 50%;
+                    .slick-dots {
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                        button {
+                            background-color: $dark;
+                        }
+                    }
+                    .slick-active button {
+                        width: 16px;
+                        height: 16px;
+                    }
                     .main__slider-item {
                         .main__slider-text {
                             font-weight: 500;
                             font-family: "Fira Sans", sans-serif;
+                            text-align: center;
+
+                            span + span {
+                                padding-left: 12px;
+                            }
                         }
                     }
                 }
             }
             &__bottom {
-                // display: flex;
-                // justify-content: space-around;
-                // align-items: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                
+
+                .main__items {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 50%;
+                    text-align: center;
+                    .main__item {
+                        border: 1px solid $dark;
+                        padding: 12px;
+                        width: 150px;
+                        height: 150px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        &:hover {
+                            transform: scale(1.25);
+                        }
+                    }
+                }
+
+                .main__links {
+                    text-align: center;
+                    width: 50%;
+                    // display: flex;
+                    // justify-content: space-around;
+                    
+
+                    .main__link {
+                        color: $dark;
+                        border-bottom: 1px solid $dark;
+                        text-align: center;
+
+                    }
+                    .main__link + .main__link{
+                        margin-left: 20px;
+                    }
+                }
             }
         }
     }
