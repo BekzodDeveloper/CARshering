@@ -77,4 +77,18 @@ html body .header__inner .phone {
   font-size: 18px;
   color: #fefefe;
 }
+
+html body .main__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body .main__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*# sourceMappingURL=style.css.map */

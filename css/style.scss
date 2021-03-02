@@ -68,5 +68,15 @@ html {
                 }
             }
         }
+
+        .main{
+            &__heading{
+                display: flex;
+            }
+            &__bottom{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
     }
 }
