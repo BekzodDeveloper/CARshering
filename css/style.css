@@ -64,8 +64,8 @@ html body .header__inner .menu__list .menu__item .menu__list-link {
   color: #fefefe;
   padding-bottom: 5px;
   border-bottom: 1px solid transparent;
-  -webkit-transition: all .6s;
-  transition: all .6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 html body .header__inner .menu__list .menu__item .menu__list-link:hover {
@@ -82,13 +82,48 @@ html body .main__heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 50px 0 30px;
 }
 
-html body .main__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+html body .main__heading .main__content {
+  text-align: center;
+  padding-top: 90px;
+}
+
+html body .main__heading .main__content .main__title {
+  font-size: 48px;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 58px;
+  font-weight: 500;
+  margin: 0 auto 20px;
+  max-width: 600px;
+}
+
+html body .main__heading .main__content .main__text {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 auto 60px;
+  max-width: 500px;
+}
+
+html body .main__heading .main__content .app-btn {
+  text-transform: uppercase;
+  color: #fefefe;
+  background-color: #c5ac2d;
+  padding: 15px 20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border: 1px solid transparent;
+}
+
+html body .main__heading .main__content .app-btn:hover {
+  color: #c5ac2d;
+  background-color: #fefefe;
+  border: 1px solid #c5ac2d;
+}
+
+html body .main__heading .main__slider .main__slider-item .main__slider-text {
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

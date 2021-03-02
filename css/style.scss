@@ -17,7 +17,6 @@ html {
         color: $dark;
         font-weight: 400;
         font-family: "Roboto Condensed", sans-serif;
-        //  font-family: 'Fira Sans', sans-serif;
         a {
             text-decoration: none;
         }
@@ -51,9 +50,9 @@ html {
                                 color: $white;
                                 padding-bottom: 5px;
                                 border-bottom: 1px solid transparent;
-                                transition: all .6s;
+                                transition: all 0.6s;
 
-                                &:hover{
+                                &:hover {
                                     border-bottom: 1px solid $accent;
                                     color: $accent;
                                 }
@@ -69,13 +68,60 @@ html {
             }
         }
 
-        .main{
-            &__heading{
+        .main {
+            &__heading {
                 display: flex;
+                padding: 50px 0 30px;
+                .main__content {
+                    text-align: center;
+                    padding-top: 90px;
+                    // max-width: 50%;
+                    .main__title {
+                        font-size: 48px;
+                        font-family: "Fira Sans", sans-serif;
+                        line-height: 58px;
+                        font-weight: 500;
+                        margin: 0 auto 20px;
+                        max-width: 600px;
+
+                    }
+                    .main__text {
+                        font-size: 24px;
+                        line-height: 28px;
+                        margin: 0 auto 60px;
+                        max-width: 500px;
+
+
+                    }
+                    .app-btn {
+                        text-transform: uppercase;
+                        color: $white;
+                        background-color: $accent;
+                        padding: 15px 20px;
+                        transition: all .5s;
+                        border: 1px solid transparent;
+
+
+                        &:hover {
+                            color: $accent;
+                            background-color: $white;
+                            border: 1px solid $accent;
+                        }
+                    }
+                }
+                .main__slider {
+                    .main__slider-item {
+                        .main__slider-text {
+                            font-weight: 500;
+                            font-family: "Fira Sans", sans-serif;
+                        }
+                    }
+                }
             }
-            &__bottom{
-                display: flex;
-                justify-content: space-around;
+            &__bottom {
+                // display: flex;
+                // justify-content: space-around;
+                // align-items: center;
             }
         }
     }
