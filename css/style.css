@@ -219,8 +219,8 @@ html body .main__bottom .main__items .main__item {
 }
 
 html body .main__bottom .main__items .main__item:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 html body .main__bottom .main__links {
@@ -236,5 +236,113 @@ html body .main__bottom .main__links .main__link {
 
 html body .main__bottom .main__links .main__link + .main__link {
   margin-left: 20px;
+}
+
+html body .rent {
+  padding: 100px 0px;
+  border-top: 1px solid #1b1818;
+  border-bottom: 1px solid #1b1818;
+}
+
+html body .rent .rent__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body .rent .rent__inner .rent__content {
+  max-width: 300px;
+}
+
+html body .rent .rent__inner .rent__content .rent__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+html body .rent .rent__inner .rent__content .rent__text {
+  margin-bottom: 20px;
+}
+
+html body .rent .rent__inner .rent__content .rent__text + .rent__text {
+  margin-bottom: 40px;
+}
+
+html body .rent .rent__inner .rent__content .app-btn {
+  text-transform: uppercase;
+  color: #fefefe;
+  background-color: #c5ac2d;
+  padding: 15px 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+
+html body .rent .rent__inner .rent__content .app-btn:hover {
+  color: #c5ac2d;
+  background-color: #fefefe;
+  border: 1px solid #c5ac2d;
+}
+
+html body .rent .rent__inner .rent__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+html body .rent .rent__inner .rent__items .rent__item {
+  margin: 0px 0px 0px 50px;
+  border: 1px solid #1b1818;
+  max-width: 250px;
+  min-height: 350px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 35px 20px;
+}
+
+html body .rent .rent__inner .rent__items .rent__item .rent__item-bigNum {
+  font-size: 96px;
+  line-height: 115px;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  opacity: 5%;
+}
+
+html body .rent .rent__inner .rent__items .rent__item .rent__item-condition {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  padding: 0px 0px 30px;
+}
+
+html body .advantages {
+  padding: 100px 0px;
+}
+
+html body .advantages .advantages__title {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+}
+
+html body .advantages .advantages__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body .advantages .advantages__items .advantages__list {
+  width: 33.333%;
+}
+
+html body .advantages .advantages__items .advantages__list .advantages__content .video-popup {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
