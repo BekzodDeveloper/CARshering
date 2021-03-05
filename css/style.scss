@@ -240,7 +240,7 @@ html {
                         max-width: 250px;
                         min-height: 350px;
                         box-sizing: border-box;
-                        padding:0px 35px 20px;
+                        padding: 0px 35px 20px;
                         .rent__item-bigNum {
                             font-size: 96px;
                             line-height: 115px;
@@ -257,38 +257,111 @@ html {
                         }
                         .rent__item-text {
                             // padding: 30px;
+                            color: inherit;
                         }
                     }
                 }
             }
         }
 
-        .advantages{
+        .advantages {
             padding: 100px 0px;
-            .advantages__title{
+            .advantages__title {
                 font-family: $font_firaSans;
                 font-size: 24px;
                 line-height: 29px;
                 font-weight: 500;
-                
+                margin-bottom: 50px;
             }
-            .advantages__items{
+            .advantages__items {
                 display: flex;
-                justify-content: space-around;
-                .advantages__list{
-                    width: 33.333%;
-                    .advantages__list-items{
+                justify-content: space-between;
+                align-items: center;
 
-                    }
-                    .advantages__image{
-                    }
-                    .advantages__content{
-                        .advantages__text{
-                            align-items: ;
+                .advantages__list {
+                    max-width: 300px;
+                    list-style: none;
+                    padding-right: 10px;
+
+                    .advantages__list-item {
+                        text-align: right;
+                        margin-bottom: 27px;
+                        padding-right: 26px;
+                        position: relative;
+                        
+                        &:nth-child(1),
+                        &:nth-child(7) {
+                            margin-right: 0;
                         }
+                        &:nth-child(2),
+                        &:nth-child(6) {
+                            margin-right: 47px;
+                        }
+                        &:nth-child(3),
+                        &:nth-child(5) {
+                            margin-right: 100px;
+                        }
+                        &:nth-child(4) {
+                            margin-right: 147px;
+                        }
+                    }
+                    .advantages__list-item::after {
+                        content: "";
+                        position: absolute;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background-color: $branded;
+                        right: 0;
+                        top: 3px;
+                    }
+                }
+                .advantages__image {
+                    color: inherit;
+                }
+                .advantages__content {
+                    max-width: 300px;
+                    text-align: right;
 
-                        .video-popup{
-                            text-transform: uppercase;
+                    .advantages__text {
+                        max-width: 300px;
+                        margin-bottom: 30px;
+                    }
+                    .advantages__text + .advantages__text {
+                        width: 270px;
+                        margin-left: auto;
+                    }
+
+                    .video-popup {
+                        text-transform: uppercase;
+                        color: $white;
+                        background-color: $accent;
+                        padding: 6px 34px 6px 64px;
+                        text-align: center;
+                        display: inline-block;
+                        position: relative;
+                        border: 1px solid transparent;
+                        transition: all .5s;
+
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 25px;
+                            height: 25px;
+                            background-image: url(../images/icon-play.svg);
+                            color: $white;
+                            top: 12px;
+                            left: 34px;
+                        }
+                        &:hover::before{
+                            color: $accent;
+                        }
+                        &:hover{
+                            color: $accent;
+                            background-color: $white;
+                            border: 1px solid $accent;
+                            
                         }
                     }
                 }
