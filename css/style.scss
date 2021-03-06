@@ -288,7 +288,7 @@ html {
                         margin-bottom: 27px;
                         padding-right: 26px;
                         position: relative;
-                        
+
                         &:nth-child(1),
                         &:nth-child(7) {
                             margin-right: 0;
@@ -341,11 +341,10 @@ html {
                         display: inline-block;
                         position: relative;
                         border: 1px solid transparent;
-                        transition: all .5s;
-
+                        transition: all 0.5s;
 
                         &::before {
-                            content: '';
+                            content: "";
                             position: absolute;
                             width: 25px;
                             height: 25px;
@@ -354,14 +353,74 @@ html {
                             top: 12px;
                             left: 34px;
                         }
-                        &:hover::before{
+                        &:hover::before {
                             color: $accent;
                         }
-                        &:hover{
+                        &:hover {
                             color: $accent;
                             background-color: $white;
                             border: 1px solid $accent;
-                            
+                        }
+                    }
+                }
+            }
+        }
+
+        .reviews {
+            background-color: $branded;
+            padding: 100px 0px;
+
+            &__inner {
+                color: $white;
+
+                .reviews__title {
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    margin-bottom: 70px;
+                    font-family: $font_firaSans;
+                }
+                .reviews__slider {
+                    box-sizing: border-box;
+                    .slick-dots {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 35px;
+
+                        button {
+                            margin: 0 5px;
+                            background-color: $accent;
+                            line-height: 12px;
+                        }
+                    }
+                    .slick-active button {
+                        width: 16px;
+                        height: 16px;
+                    }
+
+                    .reviews__item {
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 270px;
+                        min-height: 300px;
+                        border: 1px solid $accent;
+                        padding: 45px 30px;
+                        box-sizing: border-box;
+
+                        // margin-bottom: 35px;
+
+                        .reviews__item-name {
+                            font-size: 24px;
+                            line-height: 28px;
+                            font-weight: 500;
+                            font-family: $font_firaSans;
+                            padding-bottom: 45px;
+                        }
+                        .reviews__item-text {
+                            color: $white;
                         }
                     }
                 }
