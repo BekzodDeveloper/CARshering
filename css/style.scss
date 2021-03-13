@@ -409,6 +409,7 @@ html {
                         border: 1px solid $accent;
                         padding: 45px 30px;
                         box-sizing: border-box;
+                        margin: 0px 15px;
 
                         // margin-bottom: 35px;
 
@@ -425,6 +426,21 @@ html {
                     }
                 }
             }
+        }
+        .feedback {
+            &__inner{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 100px 0;
+
+            
+                    .feedback__title{
+                        font-size: 24px;
+                    }
+            
+            }
+            
         }
     }
 }
