@@ -278,6 +278,7 @@ html body .rent .rent__inner .rent__content .app-btn {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 html body .rent .rent__inner .rent__content .app-btn:hover {
@@ -534,5 +535,71 @@ html body .feedback__inner {
 
 html body .feedback__inner .feedback__title {
   font-size: 24px;
+  margin-bottom: 5px;
+}
+
+html body .feedback__inner .feedback__text {
+  margin-bottom: 50px;
+}
+
+html body .feedback__inner .feedback__input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1b1818;
+  width: 100%;
+  padding: 20px 0px 20px;
+  color: #1b1818;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html body .feedback__inner .feedback__input::-webkit-input-placeholder {
+  color: #1b1818;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html body .feedback__inner .feedback__input:-ms-input-placeholder {
+  color: #1b1818;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html body .feedback__inner .feedback__input::-ms-input-placeholder {
+  color: #1b1818;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html body .feedback__inner .feedback__input::placeholder {
+  color: #1b1818;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html body .feedback__inner .feedback__input + .feedback__input {
+  margin-bottom: 50px;
+}
+
+html body .feedback__inner .feedback__btn {
+  text-transform: uppercase;
+  color: #fefefe;
+  background-color: #c5ac2d;
+  padding: 15px 36px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+html body .feedback__inner .feedback__btn:hover {
+  color: #c5ac2d;
+  background-color: #fefefe;
+  border: 1px solid #c5ac2d;
 }
 /*# sourceMappingURL=style.css.map */

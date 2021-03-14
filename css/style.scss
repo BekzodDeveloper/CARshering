@@ -223,6 +223,7 @@ html {
                         padding: 15px 20px;
                         transition: all 0.5s;
                         border: 1px solid transparent;
+                        cursor: pointer;
 
                         &:hover {
                             color: $accent;
@@ -428,19 +429,59 @@ html {
             }
         }
         .feedback {
-            &__inner{
+            &__inner {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 100px 0;
 
-            
-                    .feedback__title{
-                        font-size: 24px;
+                .feedback__form {
+                }
+
+                .feedback__title {
+                    font-size: 24px;
+                    margin-bottom: 5px;
+                }
+                .feedback__text {
+                    margin-bottom: 50px;
+                }
+                .feedback__input {
+                    border: none;
+                    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+                    color: $dark;
+                    width: 100%;
+                    padding: 20px 0px 20px;
+                    color: $dark;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: $font_robotoCondenced;
+                    &::placeholder {
+                        color: $dark;
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: $font_robotoCondenced;
                     }
-            
+                }
+                .feedback__input + .feedback__input {
+                    margin-bottom: 50px;
+                }
+
+                .feedback__btn {
+                    text-transform: uppercase;
+                    color: $white;
+                    background-color: $accent;
+                    padding: 15px 36px;
+                    transition: all 0.5s;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $accent;
+                        background-color: $white;
+                        border: 1px solid $accent;
+                    }
+                }
             }
-            
         }
     }
 }
