@@ -58,13 +58,35 @@ html body .header__inner {
   height: 100px;
 }
 
-html body .header__inner .menu__list {
+html body .header__inner .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .header__inner .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .header__inner .menu__btn {
+  display: none;
+}
+
+html body .header__inner .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 html body .header__inner .menu__list .menu__item {
@@ -74,7 +96,7 @@ html body .header__inner .menu__list .menu__item {
 html body .header__inner .menu__list .menu__item .menu__list-link {
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 21;
+  line-height: 21px;
   color: #fefefe;
   padding-bottom: 5px;
   border-bottom: 1px solid transparent;
@@ -88,6 +110,12 @@ html body .header__inner .menu__list .menu__item .menu__list-link:hover {
 }
 
 html body .header__inner .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px;
   color: #fefefe;
 }
@@ -680,5 +708,48 @@ html body .footer__inner .social .social__list-link {
   font-size: 30px;
   padding: 0 15px;
   color: #c5ac2d;
+}
+
+@media (max-width: 768px) {
+  html body .header .menu {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html body .header .menu__btn {
+    display: block;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-top: 4px solid #fefefe;
+    border-bottom: 4px solid #fefefe;
+    background-color: transparent;
+    position: relative;
+  }
+  html body .header .menu__btn::before {
+    content: "";
+    background-color: #fefefe;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    left: 0px;
+    top: 9px;
+  }
+  html body .header .menu__list {
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    background-color: #332208;
+    text-align: center;
+    -webkit-transform: translateY(-350px);
+            transform: translateY(-350px);
+    z-index: -1;
+  }
+  html body .header .menu__list-link {
+    padding: 20px 0;
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

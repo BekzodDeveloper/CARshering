@@ -63,17 +63,27 @@ html {
                 align-items: center;
                 height: 100px;
 
+                .logo {
+                    display: flex;
+                    align-items: center;
+                }
+
                 .menu {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &__btn {
+                        display: none;
+                    }
                     &__list {
                         display: flex;
-                        justify-content: space-between;
                         .menu__item {
                             margin: 0 15px;
 
                             .menu__list-link {
                                 text-transform: uppercase;
                                 font-size: 18px;
-                                line-height: 21;
+                                line-height: 21px;
                                 color: $white;
                                 padding-bottom: 5px;
                                 border-bottom: 1px solid transparent;
@@ -89,6 +99,8 @@ html {
                 }
 
                 .phone {
+                    display: flex;
+                    align-items: center;
                     font-size: 18px;
                     color: $white;
                 }
@@ -508,6 +520,50 @@ html {
                         font-size: 30px;
                         padding: 0 15px;
                         color: $accent;
+                    }
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            .header {
+                .menu {
+                    order: 1;
+
+                }
+                .menu__btn {
+                    display: block;
+                    width: 40px;
+                    height: 30px;
+                    border: none;
+                    border-top: 4px solid $white;
+                    border-bottom: 4px solid $white;
+                    background-color: transparent;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        background-color: $white;
+                        position: absolute;
+                        width: 40px;
+                        height: 4px;
+                        left: 0px;
+                        top: 9px;
+                    }
+                }
+                .menu__list {
+                    display: block;
+                    position: absolute;
+                    top: 100px;
+                    right: 0;
+                    left: 0;
+                    background-color: $branded;
+                    text-align: center;
+                    transform: translateY(-350px);
+                    z-index: -1;
+
+                    &-link {
+                        padding: 20px 0;
+                        display: block;
                     }
                 }
             }
