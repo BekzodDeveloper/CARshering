@@ -133,6 +133,7 @@ html body .main__heading .main__content .app-btn {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 html body .main__heading .main__content .app-btn:hover {
@@ -601,5 +602,83 @@ html body .feedback__inner .feedback__btn:hover {
   color: #c5ac2d;
   background-color: #fefefe;
   border: 1px solid #c5ac2d;
+}
+
+html body .footer {
+  background-color: #332208;
+}
+
+html body .footer__inner {
+  padding: 75px 0 24px;
+}
+
+html body .footer__inner .footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .footer__inner .footer__items .app-btn {
+  text-transform: uppercase;
+  color: #fefefe;
+  background-color: #c5ac2d;
+  padding: 15px 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+html body .footer__inner .footer__items .app-btn:hover {
+  color: #c5ac2d;
+  background-color: #fefefe;
+  border: 1px solid #c5ac2d;
+}
+
+html body .footer__inner .footer__items .menu__list {
+  color: #fefefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .footer__inner .footer__items .menu__list .menu__item {
+  margin: 0 15px;
+}
+
+html body .footer__inner .footer__items .menu__list .menu__item .menu__list-link {
+  color: #fefefe;
+}
+
+html body .footer__inner .footer__items .phone {
+  color: #fefefe;
+}
+
+html body .footer__inner .social {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .footer__inner .social .social__list-link {
+  font-size: 30px;
+  padding: 0 15px;
+  color: #c5ac2d;
 }
 /*# sourceMappingURL=style.css.map */

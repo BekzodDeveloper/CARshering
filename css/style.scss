@@ -4,7 +4,20 @@ $dark: #1b1818;
 $accent: #c5ac2d;
 $font_firaSans: "Fira Sans", sans-serif;
 $font_robotoCondenced: "Roboto Condensed", sans-serif;
-
+@mixin app-btn {
+    text-transform: uppercase;
+    color: $white;
+    background-color: $accent;
+    padding: 15px 20px;
+    transition: all 0.5s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    &:hover {
+        color: $accent;
+        background-color: $white;
+        border: 1px solid $accent;
+    }
+}
 html {
     box-sizing: border-box;
     .slick-dots {
@@ -106,18 +119,7 @@ html {
                         max-width: 500px;
                     }
                     .app-btn {
-                        text-transform: uppercase;
-                        color: $white;
-                        background-color: $accent;
-                        padding: 15px 20px;
-                        transition: all 0.5s;
-                        border: 1px solid transparent;
-
-                        &:hover {
-                            color: $accent;
-                            background-color: $white;
-                            border: 1px solid $accent;
-                        }
+                        @include app-btn;
                     }
                 }
                 .main__slider {
@@ -180,8 +182,6 @@ html {
                 .main__links {
                     text-align: center;
                     width: 50%;
-                    // display: flex;
-                    // justify-content: space-around;
 
                     .main__link {
                         color: $dark;
@@ -217,19 +217,7 @@ html {
                         margin-bottom: 40px;
                     }
                     .app-btn {
-                        text-transform: uppercase;
-                        color: $white;
-                        background-color: $accent;
-                        padding: 15px 20px;
-                        transition: all 0.5s;
-                        border: 1px solid transparent;
-                        cursor: pointer;
-
-                        &:hover {
-                            color: $accent;
-                            background-color: $white;
-                            border: 1px solid $accent;
-                        }
+                        @include app-btn;
                     }
                 }
                 .rent__items {
@@ -435,9 +423,6 @@ html {
                 align-items: center;
                 padding: 100px 0;
 
-                .feedback__form {
-                }
-
                 .feedback__title {
                     font-size: 24px;
                     margin-bottom: 5px;
@@ -479,6 +464,50 @@ html {
                         color: $accent;
                         background-color: $white;
                         border: 1px solid $accent;
+                    }
+                }
+            }
+        }
+
+        .footer {
+            background-color: $branded;
+            &__inner {
+                padding: 75px 0 24px;
+                .footer__items {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .app-btn {
+                        @include app-btn;
+                    }
+
+                    .menu {
+                        &__list {
+                            color: $white;
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .menu__item {
+                                margin: 0 15px;
+                                .menu__list-link {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    .phone {
+                        color: $white;
+                    }
+                }
+                .social {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    .social__list-link {
+                        font-size: 30px;
+                        padding: 0 15px;
+                        color: $accent;
                     }
                 }
             }
