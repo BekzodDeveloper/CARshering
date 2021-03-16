@@ -528,7 +528,6 @@ html {
             .header {
                 .menu {
                     order: 1;
-
                 }
                 .menu__btn {
                     display: block;
@@ -558,14 +557,22 @@ html {
                     left: 0;
                     background-color: $branded;
                     text-align: center;
-                    transform: translateY(-350px);
+                    transform: translateY(-600px);
+                    transition: all 1s;
                     z-index: -1;
+                    padding: 20px 0;
 
                     &-link {
                         padding: 20px 0;
                         display: block;
                     }
+                    &--active {
+                        transform: translateY(0px);
+                        
+                    }
                 }
+            }
+            .main {
             }
         }
     }

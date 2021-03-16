@@ -3,10 +3,16 @@ $(function () {
         arrows: false,
         dots: true,
         autoplay: true,
-        fade: true
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
     });
-});
-$(function () {
     $('.reviews__slider').slick({
         arrows: false,
         dots: true,
@@ -14,5 +20,9 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+    });
+
+    $('.menu__btn').on('click', function () {
+        $('.menu__list').toggleClass('menu__list--active');
     });
 });

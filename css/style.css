@@ -743,13 +743,20 @@ html body .footer__inner .social .social__list-link {
     left: 0;
     background-color: #332208;
     text-align: center;
-    -webkit-transform: translateY(-350px);
-            transform: translateY(-350px);
+    -webkit-transform: translateY(-600px);
+            transform: translateY(-600px);
+    -webkit-transition: all 1s;
+    transition: all 1s;
     z-index: -1;
+    padding: 20px 0;
   }
   html body .header .menu__list-link {
     padding: 20px 0;
     display: block;
+  }
+  html body .header .menu__list--active {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 /*# sourceMappingURL=style.css.map */
