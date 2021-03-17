@@ -662,5 +662,32 @@ html {
                 }
             }
         }
+        @media (max-width: 500px) {
+            .main {
+                &__bottom {
+                    .main__items {
+                        // display: block;
+                        flex-wrap: wrap; 
+                        justify-content: center; 
+                        .main__item {
+                            // display: block;
+                            width: 100%;
+                            margin: 30px;
+                            // margin: 10px 20px;
+                        }
+                        
+                    }
+                    .main__links{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .main__link{
+                        margin-bottom: 10px;
+
+                        }
+                    }
+                }
+            }
+        }
     }
 }

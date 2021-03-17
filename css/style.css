@@ -838,4 +838,31 @@ html body .footer__inner .social .social__list-link {
     margin: 10px 20px;
   }
 }
+
+@media (max-width: 500px) {
+  html body .main__bottom .main__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .main__bottom .main__items .main__item {
+    width: 100%;
+    margin: 30px;
+  }
+  html body .main__bottom .main__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .main__bottom .main__links .main__link {
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
