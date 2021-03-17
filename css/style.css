@@ -719,24 +719,21 @@ html body .footer__inner .social .social__list-link {
 
 @media (max-width: 1200px) {
   html body .main__bottom .main__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  html body .main__bottom .main__items .main__item {
-    margin-top: 20px;
+    width: 100%;
   }
   html body .main__bottom .main__links {
-    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 1100px) {
   html body .main__heading {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   html body .main__heading .main__content {
     width: 100%;
@@ -748,10 +745,21 @@ html body .footer__inner .social .social__list-link {
     display: -ms-flexbox;
     display: flex;
   }
+  html body .main__heading .main__slider-item {
+    width: 100%;
+  }
   html body .main__heading .main__slider-item .main__slider-images {
     display: block;
     margin: 0 auto;
     max-width: 80%;
+  }
+  html body .main__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
   }
 }
 
@@ -803,6 +811,31 @@ html body .footer__inner .social .social__list-link {
   html body .header .menu__list--active {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+  html body .main__bottom .main__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  html body .main__bottom .main__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .main__bottom .main__items .main__item {
+    margin: 10px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

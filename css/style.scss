@@ -539,23 +539,14 @@ html {
         @media (max-width: 1200px) {
             .main {
                 &__bottom {
-                    // display: flex;
+                    // display: block;
 
-                    // align-items: center;
                     .main__items {
-                        display: flex;
-                        max-width: 100%;
-                        flex-wrap: wrap;
-                        .main__item {
-                            margin-top: 20px;
-                        }
+                        width: 100%;
                     }
                     .main__links {
-                        display: inline-block;
-                        // display: flex;
-                        // justify-content: center;
-                        // align-items: center;
-                        // max-width: 100%;
+                        width: 100%;
+                        margin-top: 20px;
                     }
                 }
             }
@@ -563,7 +554,8 @@ html {
 
         @media (max-width: 1100px) {
             .main__heading {
-                display: block;
+                display: flex;
+                flex-wrap: wrap;
                 .main__content {
                     width: 100%;
                 }
@@ -571,10 +563,9 @@ html {
                     padding-top: 30px;
                     width: 100%;
                     display: flex;
-                    // margin: 0 auto;
 
                     &-item {
-                        // width: 100%;
+                        width: 100%;
 
                         .main__slider-images {
                             display: block;
@@ -582,6 +573,18 @@ html {
                             max-width: 80%;
                         }
                     }
+                }
+            }
+
+            .main__bottom {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+
+                .main__items {
+                    // display: flex;
+                    // justify-content: space-around;
+                    // width: 100%;
                 }
             }
         }
@@ -631,6 +634,30 @@ html {
                     }
                     &--active {
                         transform: translateY(0px);
+                    }
+                }
+            }
+            .main {
+                &__bottom {
+                    .main__items {
+                        display: flex;
+                        flex-flow: row wrap;
+                    }
+                }
+            }
+        }
+        @media (max-width: 600px) {
+            .main {
+                &__bottom {
+                    .main__items {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .main__item {
+                            // display: block;
+                            // width: 100%;
+                            margin: 10px 20px;
+                        }
                     }
                 }
             }
