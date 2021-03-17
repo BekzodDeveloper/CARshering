@@ -377,9 +377,8 @@ html body .advantages .advantages__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -430,18 +429,12 @@ html body .advantages .advantages__items .advantages__image {
 }
 
 html body .advantages .advantages__items .advantages__content {
-  max-width: 300px;
+  width: 300px;
   text-align: right;
 }
 
 html body .advantages .advantages__items .advantages__content .advantages__text {
-  max-width: 300px;
   margin-bottom: 30px;
-}
-
-html body .advantages .advantages__items .advantages__content .advantages__text + .advantages__text {
-  width: 270px;
-  margin-left: auto;
 }
 
 html body .advantages .advantages__items .advantages__content .video-popup {
@@ -754,6 +747,16 @@ html body .footer__inner .social .social__list-link {
   html body .rent .rent__inner .rent__items .rent__item {
     margin-left: 0px;
   }
+  html body .advantages__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  html body .advantages__items .advantages__image {
+    width: 60%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -789,6 +792,23 @@ html body .footer__inner .social .social__list-link {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
+  }
+  html body .advantages__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  html body .advantages__items .advantages__list {
+    padding-right: 0px !important;
+  }
+  html body .advantages__items .advantages__image {
+    width: 50%;
+  }
+  html body .advantages__items .advantages__content {
+    width: 80% !important;
+    margin-top: 30px;
   }
 }
 
@@ -879,6 +899,15 @@ html body .footer__inner .social .social__list-link {
   }
   html body .main__bottom .main__items .main__item {
     margin: 10px 20px;
+  }
+  html body .advantages .advantages__items .advantages__list-item {
+    text-align: left;
+    margin-right: 0;
+    padding-left: 26px;
+    padding-right: 0;
+  }
+  html body .advantages .advantages__items .advantages__image {
+    width: 80%;
   }
 }
 
