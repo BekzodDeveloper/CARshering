@@ -1,6 +1,6 @@
 $branded: #332208;
 $white: #fefefe;
-$bgc: #ebebeb;
+$bgc: #fafafa;
 $dark: #1b1818;
 $accent: #c5ac2d;
 $font_firaSans: "Fira Sans", sans-serif;
@@ -218,13 +218,14 @@ html {
             }
         }
         .rent {
+            background-color: $bgc;
             padding: 100px 0px;
             border-top: 1px solid $dark;
             border-bottom: 1px solid $dark;
             .rent__inner {
                 display: flex;
                 .rent__content {
-                    max-width: 300px;
+                   width: 300px;
 
                     .rent__title {
                         font-size: 24px;
@@ -550,6 +551,31 @@ html {
                     }
                 }
             }
+            .rent{
+                .rent__inner{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .rent__content{
+                        width: 90%;
+
+                        text-align: center;
+                    }
+                    .rent__items{
+                        margin-top: 50px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        width: 100%; 
+                        .rent__item{
+                            margin-left: 0px;
+
+                        }
+                        
+                    }
+                }
+            }
+            
         }
 
         @media (max-width: 1100px) {
@@ -581,13 +607,32 @@ html {
                 flex-wrap: wrap;
                 width: 100%;
 
-                .main__items {
-                    // display: flex;
-                    // justify-content: space-around;
-                    // width: 100%;
+            }
+            
+            
+        }
+
+        @media (max-width:920px){
+            .main{
+                padding: 80px 0;
+            }
+            .rent{
+                padding: 80px 0;
+                .rent__inner{
+                    .rent__content{
+                    }
+                    .rent__items{ 
+                        .rent__item{
+                            margin: 10px 26px;
+                            max-width: 600px;
+                            min-height: 300px;
+                        } 
+                    }
                 }
             }
         }
+
+        
 
         @media (max-width: 768px) {
             .header {
@@ -646,6 +691,7 @@ html {
                 }
             }
         }
+        
         @media (max-width: 600px) {
             .main {
                 &__bottom {
@@ -663,7 +709,23 @@ html {
             }
         }
         @media (max-width: 500px) {
+            .header{
+                &__inner{
+                    height: 80px;
+                }
+            }
             .main {
+                .main__heading{
+                    padding: 50px 0 30px;
+                }
+                .main__content{
+                    .main__title{
+                        font-size: 44px;
+                    }
+                    .main__text{
+                        font-size: 20px;
+                    }
+                }
                 &__bottom {
                     .main__items {
                         // display: block;
@@ -688,6 +750,16 @@ html {
                     }
                 }
             }
+            .rent{
+                .rent__inner{
+                    .rent__items{ 
+                        .rent__item{
+                            margin: 10px 20px;
+                        } 
+                    }
+                }
+            }
+
         }
     }
 }

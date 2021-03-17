@@ -127,7 +127,7 @@ html body .header__inner .phone {
 }
 
 html body .main {
-  background-color: #ebebeb;
+  background-color: #fafafa;
   padding-bottom: 100px;
 }
 
@@ -275,6 +275,7 @@ html body .main__bottom .main__links .main__link + .main__link {
 }
 
 html body .rent {
+  background-color: #fafafa;
   padding: 100px 0px;
   border-top: 1px solid #1b1818;
   border-bottom: 1px solid #1b1818;
@@ -287,7 +288,7 @@ html body .rent .rent__inner {
 }
 
 html body .rent .rent__inner .rent__content {
-  max-width: 300px;
+  width: 300px;
 }
 
 html body .rent .rent__inner .rent__content .rent__title {
@@ -725,6 +726,34 @@ html body .footer__inner .social .social__list-link {
     width: 100%;
     margin-top: 20px;
   }
+  html body .rent .rent__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .rent .rent__inner .rent__content {
+    width: 90%;
+    text-align: center;
+  }
+  html body .rent .rent__inner .rent__items {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  html body .rent .rent__inner .rent__items .rent__item {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -760,6 +789,20 @@ html body .footer__inner .social .social__list-link {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  html body .main {
+    padding: 80px 0;
+  }
+  html body .rent {
+    padding: 80px 0;
+  }
+  html body .rent .rent__inner .rent__items .rent__item {
+    margin: 10px 26px;
+    max-width: 600px;
+    min-height: 300px;
   }
 }
 
@@ -840,6 +883,18 @@ html body .footer__inner .social .social__list-link {
 }
 
 @media (max-width: 500px) {
+  html body .header__inner {
+    height: 80px;
+  }
+  html body .main .main__heading {
+    padding: 50px 0 30px;
+  }
+  html body .main .main__content .main__title {
+    font-size: 44px;
+  }
+  html body .main .main__content .main__text {
+    font-size: 20px;
+  }
   html body .main__bottom .main__items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -863,6 +918,9 @@ html body .footer__inner .social .social__list-link {
   }
   html body .main__bottom .main__links .main__link {
     margin-bottom: 10px;
+  }
+  html body .rent .rent__inner .rent__items .rent__item {
+    margin: 10px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
