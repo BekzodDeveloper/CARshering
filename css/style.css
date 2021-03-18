@@ -810,6 +810,14 @@ html body .footer__inner .social .social__list-link {
     width: 80% !important;
     margin-top: 30px;
   }
+  html body .feedback__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .feedback__inner .feedback__image {
+    display: none;
+  }
 }
 
 @media (max-width: 920px) {
@@ -823,6 +831,25 @@ html body .footer__inner .social .social__list-link {
     margin: 10px 26px;
     max-width: 600px;
     min-height: 300px;
+  }
+  html body .footer__inner .footer__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  html body .footer__inner .footer__items .menu {
+    margin-right: 80px;
+  }
+  html body .footer__inner .footer__items .menu .menu__list {
+    display: block;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+  }
+  html body .footer__inner .footer__items .menu .menu__list .menu__item {
+    margin-top: 10px;
   }
 }
 
@@ -883,6 +910,9 @@ html body .footer__inner .social .social__list-link {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+  }
+  html body .footer__inner .footer__items .menu {
+    display: none;
   }
 }
 
@@ -957,6 +987,13 @@ html body .footer__inner .social .social__list-link {
   }
   html body .rent .rent__inner .rent__items .rent__item {
     margin: 10px 20px;
+  }
+  html body .footer__inner .footer__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html body .footer__inner .footer__items .phone {
+    margin: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
