@@ -719,11 +719,15 @@ html {
             .advantages {
                 .advantages__items {
                     .advantages__list {
-                        &-item {
+                        .advantages__list-item {
                             text-align: left;
-                            margin-right: 0;
                             padding-left: 26px;
-                            padding-right: 0;
+                        }
+                        .advantages__list-item:nth-child(4){
+                            margin-right: 0;
+                        }
+                        .advantages__list-item::after{
+                            left: 0;
                         }
                     }
                     .advantages__image {
@@ -734,6 +738,11 @@ html {
         }
         @media (max-width: 500px) {
             .header {
+                .menu{
+                    &__list{
+                        top: 80px;
+                    }
+                }
                 &__inner {
                     height: 80px;
                 }
