@@ -1,8 +1,8 @@
-$branded: #332208;
+$branded: #28425e;
 $white: #fefefe;
-$bgc: #fafafa;
+$bgc: #E1E8F1;
 $dark: #1b1818;
-$accent: #c5ac2d;
+$accent: #446f9d;
 $font_firaSans: "Fira Sans", sans-serif;
 $font_robotoCondenced: "Roboto Condensed", sans-serif;
 @mixin app-btn {
@@ -117,7 +117,7 @@ html {
         }
 
         .main {
-            background-color: $bgc;
+            // background-color: $bgc;
             padding-bottom: 100px;
             &__heading {
                 display: flex;
@@ -220,8 +220,8 @@ html {
         .rent {
             background-color: $bgc;
             padding: 100px 0px;
-            border-top: 1px solid $dark;
-            border-bottom: 1px solid $dark;
+            border-top: 5px solid $branded;
+            border-bottom: 5px solid $branded;
             .rent__inner {
                 display: flex;
                 .rent__content {

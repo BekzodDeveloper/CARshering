@@ -43,7 +43,7 @@ html body .container {
 }
 
 html body .header {
-  background-color: #332208;
+  background-color: #28425e;
   position: fixed;
   top: 0;
   left: 0;
@@ -111,8 +111,8 @@ html body .header__inner .menu__list .menu__item .menu__list-link {
 }
 
 html body .header__inner .menu__list .menu__item .menu__list-link:hover {
-  border-bottom: 1px solid #c5ac2d;
-  color: #c5ac2d;
+  border-bottom: 1px solid #446f9d;
+  color: #446f9d;
 }
 
 html body .header__inner .phone {
@@ -127,7 +127,6 @@ html body .header__inner .phone {
 }
 
 html body .main {
-  background-color: #fafafa;
   padding-bottom: 100px;
 }
 
@@ -163,7 +162,7 @@ html body .main__heading .main__content .main__text {
 html body .main__heading .main__content .app-btn {
   text-transform: uppercase;
   color: #fefefe;
-  background-color: #c5ac2d;
+  background-color: #446f9d;
   padding: 15px 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -172,9 +171,9 @@ html body .main__heading .main__content .app-btn {
 }
 
 html body .main__heading .main__content .app-btn:hover {
-  color: #c5ac2d;
+  color: #446f9d;
   background-color: #fefefe;
-  border: 1px solid #c5ac2d;
+  border: 1px solid #446f9d;
 }
 
 html body .main__heading .main__slider {
@@ -275,10 +274,10 @@ html body .main__bottom .main__links .main__link + .main__link {
 }
 
 html body .rent {
-  background-color: #fafafa;
+  background-color: #E1E8F1;
   padding: 100px 0px;
-  border-top: 1px solid #1b1818;
-  border-bottom: 1px solid #1b1818;
+  border-top: 5px solid #28425e;
+  border-bottom: 5px solid #28425e;
 }
 
 html body .rent .rent__inner {
@@ -310,7 +309,7 @@ html body .rent .rent__inner .rent__content .rent__text + .rent__text {
 html body .rent .rent__inner .rent__content .app-btn {
   text-transform: uppercase;
   color: #fefefe;
-  background-color: #c5ac2d;
+  background-color: #446f9d;
   padding: 15px 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -319,9 +318,9 @@ html body .rent .rent__inner .rent__content .app-btn {
 }
 
 html body .rent .rent__inner .rent__content .app-btn:hover {
-  color: #c5ac2d;
+  color: #446f9d;
   background-color: #fefefe;
-  border: 1px solid #c5ac2d;
+  border: 1px solid #446f9d;
 }
 
 html body .rent .rent__inner .rent__items {
@@ -419,7 +418,7 @@ html body .advantages .advantages__items .advantages__list .advantages__list-ite
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #332208;
+  background-color: #28425e;
   right: 0;
   top: 3px;
 }
@@ -440,7 +439,7 @@ html body .advantages .advantages__items .advantages__content .advantages__text 
 html body .advantages .advantages__items .advantages__content .video-popup {
   text-transform: uppercase;
   color: #fefefe;
-  background-color: #c5ac2d;
+  background-color: #446f9d;
   padding: 6px 34px 6px 64px;
   text-align: center;
   display: inline-block;
@@ -462,17 +461,17 @@ html body .advantages .advantages__items .advantages__content .video-popup::befo
 }
 
 html body .advantages .advantages__items .advantages__content .video-popup:hover::before {
-  color: #c5ac2d;
+  color: #446f9d;
 }
 
 html body .advantages .advantages__items .advantages__content .video-popup:hover {
-  color: #c5ac2d;
+  color: #446f9d;
   background-color: #fefefe;
-  border: 1px solid #c5ac2d;
+  border: 1px solid #446f9d;
 }
 
 html body .reviews {
-  background-color: #332208;
+  background-color: #28425e;
   padding: 100px 0px;
 }
 
@@ -508,7 +507,7 @@ html body .reviews__inner .reviews__slider .slick-dots {
 
 html body .reviews__inner .reviews__slider .slick-dots button {
   margin: 0 5px;
-  background-color: #c5ac2d;
+  background-color: #446f9d;
   line-height: 12px;
 }
 
@@ -531,7 +530,7 @@ html body .reviews__inner .reviews__slider .reviews__item {
           justify-content: space-between;
   width: 270px;
   min-height: 300px;
-  border: 1px solid #c5ac2d;
+  border: 1px solid #446f9d;
   padding: 45px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -619,7 +618,7 @@ html body .feedback__inner .feedback__input + .feedback__input {
 html body .feedback__inner .feedback__btn {
   text-transform: uppercase;
   color: #fefefe;
-  background-color: #c5ac2d;
+  background-color: #446f9d;
   padding: 15px 36px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -628,13 +627,13 @@ html body .feedback__inner .feedback__btn {
 }
 
 html body .feedback__inner .feedback__btn:hover {
-  color: #c5ac2d;
+  color: #446f9d;
   background-color: #fefefe;
-  border: 1px solid #c5ac2d;
+  border: 1px solid #446f9d;
 }
 
 html body .footer {
-  background-color: #332208;
+  background-color: #28425e;
 }
 
 html body .footer__inner {
@@ -656,7 +655,7 @@ html body .footer__inner .footer__items {
 html body .footer__inner .footer__items .app-btn {
   text-transform: uppercase;
   color: #fefefe;
-  background-color: #c5ac2d;
+  background-color: #446f9d;
   padding: 15px 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -665,9 +664,9 @@ html body .footer__inner .footer__items .app-btn {
 }
 
 html body .footer__inner .footer__items .app-btn:hover {
-  color: #c5ac2d;
+  color: #446f9d;
   background-color: #fefefe;
-  border: 1px solid #c5ac2d;
+  border: 1px solid #446f9d;
 }
 
 html body .footer__inner .footer__items .menu__list {
@@ -708,7 +707,7 @@ html body .footer__inner .social {
 html body .footer__inner .social .social__list-link {
   font-size: 30px;
   padding: 0 15px;
-  color: #c5ac2d;
+  color: #446f9d;
 }
 
 @media (max-width: 1200px) {
@@ -885,7 +884,7 @@ html body .footer__inner .social .social__list-link {
     top: 100px;
     right: 0;
     left: 0;
-    background-color: #332208;
+    background-color: #28425e;
     text-align: center;
     -webkit-transform: translateY(-600px);
             transform: translateY(-600px);
