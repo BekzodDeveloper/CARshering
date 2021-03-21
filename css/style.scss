@@ -642,9 +642,26 @@ html {
         }
 
         @media (max-width: 920px) {
-            
+            .header {
+                &__inner {
+                    .menu {
+                        .menu__list {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+
+                            .menu__item {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
             .main {
                 padding: 80px 0;
+                &__heading {
+                    padding-top: 100px;
+                }
             }
             .rent {
                 padding: 80px 0;
@@ -669,8 +686,10 @@ html {
                                 display: block;
                                 justify-content: space-around;
                                 text-align: center;
+                                font-size: 14px!important;
                                 .menu__item {
                                     margin-top: 10px;
+                                    font-size: 16px;
                                 }
                             }
                         }

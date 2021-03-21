@@ -825,8 +825,24 @@ html body .footer__inner .social .social__list-link {
 }
 
 @media (max-width: 920px) {
+  html body .header__inner .menu .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .header__inner .menu .menu__list .menu__item {
+    margin-top: 10px;
+  }
   html body .main {
     padding: 80px 0;
+  }
+  html body .main__heading {
+    padding-top: 100px;
   }
   html body .rent {
     padding: 80px 0;
@@ -851,9 +867,11 @@ html body .footer__inner .social .social__list-link {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     text-align: center;
+    font-size: 14px !important;
   }
   html body .footer__inner .footer__items .menu .menu__list .menu__item {
     margin-top: 10px;
+    font-size: 16px;
   }
 }
 
