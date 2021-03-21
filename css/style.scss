@@ -373,7 +373,8 @@ html {
 
                             &:before {
                                 // background-color:$branded;
-                                filter: invert(23%) sepia(5%) saturate(4962%) hue-rotate(171deg) brightness(96%) contrast(94%);
+                                filter: invert(23%) sepia(5%) saturate(4962%) hue-rotate(171deg) brightness(96%)
+                                    contrast(94%);
                             }
                         }
                     }
@@ -641,6 +642,7 @@ html {
         }
 
         @media (max-width: 920px) {
+            
             .main {
                 padding: 80px 0;
             }
