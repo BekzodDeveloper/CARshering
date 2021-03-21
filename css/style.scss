@@ -1,6 +1,6 @@
 $branded: #28425e;
 $white: #fefefe;
-$bgc: #E1E8F1;
+$bgc: #e1e8f1;
 $dark: #1b1818;
 $accent: #446f9d;
 $font_firaSans: "Fira Sans", sans-serif;
@@ -74,6 +74,9 @@ html {
                 .logo {
                     display: flex;
                     align-items: center;
+                    &__link {
+                        width: 100px;
+                    }
                 }
 
                 .menu {
@@ -220,8 +223,8 @@ html {
         .rent {
             background-color: $bgc;
             padding: 100px 0px;
-            border-top: 5px solid $branded;
-            border-bottom: 5px solid $branded;
+            border-top: 1px solid $branded;
+            border-bottom: 1px solid $branded;
             .rent__inner {
                 display: flex;
                 .rent__content {
@@ -361,13 +364,17 @@ html {
                             top: 12px;
                             left: 34px;
                         }
-                        &:hover::before {
-                            color: $accent;
-                        }
+
                         &:hover {
                             color: $accent;
                             background-color: $white;
                             border: 1px solid $accent;
+                            // fill: $branded;
+
+                            &:before {
+                                // background-color:$branded;
+                                filter: invert(23%) sepia(5%) saturate(4962%) hue-rotate(171deg) brightness(96%) contrast(94%);
+                            }
                         }
                     }
                 }
@@ -672,6 +679,11 @@ html {
 
         @media (max-width: 768px) {
             .header {
+                &__inner {
+                    .phone {
+                        margin-right: 80px;
+                    }
+                }
                 .menu {
                     order: 1;
                     z-index: 100;
@@ -831,7 +843,7 @@ html {
                     .footer__items {
                         // display: flex;
                         flex-wrap: wrap;
-                        .phone{
+                        .phone {
                             margin: 20px;
                         }
                     }

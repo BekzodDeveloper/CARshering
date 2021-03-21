@@ -73,6 +73,10 @@ html body .header__inner .logo {
           align-items: center;
 }
 
+html body .header__inner .logo__link {
+  width: 100px;
+}
+
 html body .header__inner .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,10 +278,10 @@ html body .main__bottom .main__links .main__link + .main__link {
 }
 
 html body .rent {
-  background-color: #E1E8F1;
+  background-color: #e1e8f1;
   padding: 100px 0px;
-  border-top: 5px solid #28425e;
-  border-bottom: 5px solid #28425e;
+  border-top: 1px solid #28425e;
+  border-bottom: 1px solid #28425e;
 }
 
 html body .rent .rent__inner {
@@ -460,14 +464,15 @@ html body .advantages .advantages__items .advantages__content .video-popup::befo
   left: 34px;
 }
 
-html body .advantages .advantages__items .advantages__content .video-popup:hover::before {
-  color: #446f9d;
-}
-
 html body .advantages .advantages__items .advantages__content .video-popup:hover {
   color: #446f9d;
   background-color: #fefefe;
   border: 1px solid #446f9d;
+}
+
+html body .advantages .advantages__items .advantages__content .video-popup:hover:before {
+  -webkit-filter: invert(23%) sepia(5%) saturate(4962%) hue-rotate(171deg) brightness(96%) contrast(94%);
+          filter: invert(23%) sepia(5%) saturate(4962%) hue-rotate(171deg) brightness(96%) contrast(94%);
 }
 
 html body .reviews {
@@ -853,6 +858,9 @@ html body .footer__inner .social .social__list-link {
 }
 
 @media (max-width: 768px) {
+  html body .header__inner .phone {
+    margin-right: 80px;
+  }
   html body .header .menu {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
