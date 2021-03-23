@@ -119,6 +119,10 @@ html body .header__inner .menu__list .menu__item .menu__list-link:hover {
   color: #446f9d;
 }
 
+html body .header__inner .phone-icon {
+  display: none;
+}
+
 html body .header__inner .phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -825,7 +829,25 @@ html body .footer__inner .social .social__list-link {
 }
 
 @media (max-width: 920px) {
-  html body .main {
+  html body .header__inner .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .header__inner .phone-link .phone-icon {
+    display: block;
+    font-size: 25px;
+    color: #fefefe;
+  }
+  html body .header__inner .phone {
+    display: none;
+  }
+  html body .header__inner .main {
     padding: 80px 0;
   }
   html body .rent {

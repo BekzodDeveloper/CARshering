@@ -109,7 +109,9 @@ html {
                         }
                     }
                 }
-
+                .phone-icon{
+                    display: none;
+                }
                 .phone {
                     display: flex;
                     align-items: center;
@@ -642,10 +644,28 @@ html {
         }
 
         @media (max-width: 920px) {
-            
-            .main {
-                padding: 80px 0;
+            .header__inner {
+                .menu__list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .phone-link{
+                    .phone-icon{
+                        display: block;
+                        font-size: 25px;
+                        color: $white;
+                    }
+                }
+                .phone{
+                    display: none;
+                }
+                .main {
+                    padding: 80px 0;
+                }
+                
             }
+            
             .rent {
                 padding: 80px 0;
                 .rent__inner {
